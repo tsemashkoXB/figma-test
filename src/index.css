@@ -1,1 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
+:root {
+  /* Black & White */
+  --white: #ffffff;
+  /* Dark Gray */
+  --dark-gray-1: #1a2024;
+  --dark-gray-2: #252c32;
+  /* Mid Gray */
+  --mid-gray-1: #5b6871;
+  --mid-gray-2: #6e7c87;
+  --mid-gray-3: #84919a;
+  --mid-gray-4: #9aa6ac;
+  --mid-gray-5: #b0babf;
+  /* Light Gray */
+  --light-gray-1: #d5dadd;
+  --light-gray-2: #dde2e4;
+  --light-gray-3: #e5e9eb;
+  --light-gray-5: #f6f8f9;
+  /* Primary */
+  --primary-200: #d7edff;
+  --primary-500: #4094f7;
+  --primary-600: #0e73f6;
+  --primary-700: #0452c8;
+  /* Yellow */
+  --yellow-500: #f8dd4e;
+  --yellow-800: #835101;
+  /* Green */
+  --green-500: #47d16c;
+  /* Red */
+  --red-500: #f76659;
+  /* Shadow */
+  --shadow-elevation-1: 0px 1px 2px 0px rgba(91, 104, 113, 0.32), 0px 0px 1px 0px rgba(26, 32, 36, 0.32);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: var(--white);
+  color: var(--dark-gray-2);
+  overflow: hidden;
+}
