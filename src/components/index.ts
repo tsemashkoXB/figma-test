@@ -1,4 +1,5 @@
 export { IconButton } from "./IconButton";
+export * from "./icons/glass";
 export { SearchBox } from "./SearchBox";
 export { Dropdown } from "./Dropdown";
 export { Avatar } from "./Avatar";
