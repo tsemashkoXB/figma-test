@@ -157,21 +157,23 @@ export default function KanbanFixed() {
         ))}
       </div>
 
-      <h1 className="kf-page-title">All sprints</h1>
+      <div className="kf-top-row">
+        <h1 className="kf-page-title">All sprints</h1>
+        <button type="button" className="kf-btn-primary">
+          Complete sprint
+        </button>
+        <button type="button" className="kf-toolbar-icon i1">
+          <img src={`${FIGMA_ICONS}/header-icon-1.svg`} alt="" />
+        </button>
+        <button type="button" className="kf-toolbar-icon i2">
+          <img src={`${FIGMA_ICONS}/header-icon-2.svg`} alt="" />
+        </button>
+        <button type="button" className="kf-toolbar-icon i3">
+          <img src={`${FIGMA_ICONS}/header-icon-3.svg`} alt="" />
+        </button>
+      </div>
 
-      <button type="button" className="kf-btn-primary">
-        Complete sprint
-      </button>
-      <button type="button" className="kf-toolbar-icon i1">
-        <img src={`${FIGMA_ICONS}/header-icon-1.svg`} alt="" />
-      </button>
-      <button type="button" className="kf-toolbar-icon i2">
-        <img src={`${FIGMA_ICONS}/header-icon-2.svg`} alt="" />
-      </button>
-      <button type="button" className="kf-toolbar-icon i3">
-        <img src={`${FIGMA_ICONS}/header-icon-3.svg`} alt="" />
-      </button>
-
+      <div className="kf-toolbar-row">
       <div className="kf-toolbar-search">
         <span>Search</span>
         <img src={`${FIGMA_ICONS}/search.svg`} alt="" />
@@ -196,6 +198,7 @@ export default function KanbanFixed() {
       <div className="kf-toolbar-dropdown">
         <span>All sprints</span>
         <img src={`${FIGMA_ICONS}/chevron-dropdown.svg`} alt="" />
+      </div>
       </div>
 
       <div className="kf-boards">
