@@ -1,39 +1,12 @@
-import "./App.css";
-import {
-  Header,
-  Sidebar,
-  Breadcrumbs,
-  Toolbar,
-  Board,
-} from "./components";
-import {
-  headerDropdowns,
-  sidebarNavItems,
-  sidebarNavItemsSecondary,
-  breadcrumbs,
-  toolbarAvatars,
-  boardColumns,
-} from "./data";
+import { Routes, Route, Navigate } from "react-router-dom";
+import KanbanAutoLayout from "./pages/KanbanAutoLayout";
 
 function App() {
   return (
-    <div className="kanban">
-      <Header dropdowns={headerDropdowns} />
-
-      <div className="layout-body">
-        <Sidebar
-          primaryNavItems={sidebarNavItems}
-          secondaryNavItems={sidebarNavItemsSecondary}
-        />
-
-        <main className="main">
-          <Breadcrumbs items={breadcrumbs} />
-          <h1 className="page-title">All sprints</h1>
-          <Toolbar avatars={toolbarAvatars} />
-          <Board columns={boardColumns} />
-        </main>
-      </div>
-    </div>
+    <Routes>
+      <Route path="/kanban-autolayout" element={<KanbanAutoLayout />} />
+      <Route path="/" element={<Navigate to="/kanban-autolayout" replace />} />
+    </Routes>
   );
 }
 
